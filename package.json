@@ -1,0 +1,22 @@
+{
+  "name": "price-tracker-7-shops",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Local Supermarket Price Tracker for Germany with Live API and React Frontend",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "npm --prefix supermarket-radar run dev",
+    "dev": "concurrently -n \"API,VITE\" -c \"cyan,magenta\" \"node server.js\" \"npm --prefix supermarket-radar run dev\"",
+    "build": "npm --prefix supermarket-radar run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.10",
+    "express": "^4.21.2",
+    "lucide-react": "^1.72.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
